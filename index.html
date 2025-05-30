@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5_assign4</title>
+    <style>
+        .container{
+            display: flex;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        .menu{
+            width: 200px;
+            border: 2px solid grey;
+            font-size: 20px;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-right: 5px;
+        }
+        .menu a{
+            display: block;
+            color: blue;
+            padding: 15px;
+            text-decoration: none;
+            background-color: lightblue;
+        }
+
+        .menu a.active{
+            background-color: orange;
+            color: white;
+            font-weight: bold;
+        }
+        .h{
+            margin-left: 200px;
+        }
+        .H{
+            margin-left: 100px;
+        }
+        .m{
+            font-size: 20px;
+            border: 2px solid grey;
+            padding-left: 5PX;
+            padding-top: 5PX;
+            padding-bottom: 5PX;
+        }
+        .m ul{
+            margin: 0;
+            padding: 0;
+            border: 1PX solid grey;
+            width: max-content;
+            list-style-type: none;
+            background-color: rgb(192, 187, 187);
+        }
+        .m li{
+            display: inline-block;
+            padding: 7px 10px;
+            border-left: 1px solid blue;
+        }
+        .m li a{
+            overflow: hidden;
+            text-decoration: none;
+            text-align: center;
+        }
+        li a.ac{
+            color: white;
+            font-weight: bold;
+        }
+        li:first-child{
+            border-left: none;
+            background-color: rgb(97, 92, 92);
+            text-align: center;
+            padding-right: 20px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>Vertical Navigation Bar</h2>
+            <div class="menu">
+                <a href="#home" class="active">Home</a>
+                <a href="#java">Java</a>
+                <a href="#css">CSS</a>
+                <a href="#boot">Boootstrap</a>
+            </div>
+            
+        </div>
+        <div class="h">
+
+            <h2 class="H">Horizontal Navigation Bar</h2>
+            <div class="m">
+                <ul>
+                    <li><a href="#home" class="ac">Home</a></li>
+                    <li><a href="#java">Java</a></li>
+                    <li><a href="html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="boot">Bootstrap</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
